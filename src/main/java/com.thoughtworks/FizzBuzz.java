@@ -6,6 +6,9 @@ public class FizzBuzz {
     if (digit % 15 == 0) {
       return "FizzBuzz";
     }
+    if (digit % 21 == 0) {
+      return "FizzWhizz";
+    }
     if (digit % 3 == 0) {
       return "Fizz";
     }

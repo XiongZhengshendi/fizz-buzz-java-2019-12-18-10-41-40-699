@@ -53,4 +53,13 @@ public class FizzBuzzTest {
     assertEquals(actual, "FizzBuzz");
   }
 
+  @Test
+  public void should_return_FizzWhizz_given_input_divided_by_3_and_7() {
+    int digit = 21;
+
+    String actual = fizzBuzz.handleDigit(digit);
+
+    assertEquals(actual, "FizzWhizz");
+  }
+
 }
