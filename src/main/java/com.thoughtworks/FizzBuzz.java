@@ -9,6 +9,9 @@ public class FizzBuzz {
     if (digit % 21 == 0) {
       return "FizzWhizz";
     }
+    if (digit % 35 == 0) {
+      return "BuzzWhizz";
+    }
     if (digit % 3 == 0) {
       return "Fizz";
     }
