@@ -6,13 +6,24 @@ import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
 
+  FizzBuzz fizzBuzz = new FizzBuzz();
+
   @Test
   public void should_return_origin_digit_given_not_match_rule() {
-    FizzBuzz fizzBuzz = new FizzBuzz();
-    int digit =1;
+    int digit = 1;
 
-    int actual=fizzBuzz.handleDigit(digit);
+    String actual = fizzBuzz.handleDigit(digit);
 
-    assertEquals(actual,digit);
+    assertEquals(actual, String.valueOf(digit));
   }
+
+  @Test
+  public void should_return_Fizz_given_input_divided_by_3() {
+    int digit = 3;
+
+    String actual = fizzBuzz.handleDigit(digit);
+
+    assertEquals(actual, "Fizz");
+  }
+
 }
