@@ -3,6 +3,9 @@ package com.thoughtworks;
 public class FizzBuzz {
 
   public String handleDigit(int digit) {
+    if (digit % 105 == 0) {
+      return "FizzBuzzWhizz";
+    }
     if (digit % 15 == 0) {
       return "FizzBuzz";
     }
