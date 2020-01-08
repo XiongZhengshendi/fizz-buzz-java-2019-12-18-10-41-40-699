@@ -1,29 +1,29 @@
 package com.thoughtworks;
 
+/**
+ * @author zheng.xiong
+ */
 public class FizzBuzz {
 
   public String handleDigit(int digit) {
-    if (digit % 105 == 0) {
-      return "FizzBuzzWhizz";
+    String result = handleRules(digit);
+    if ("".equals(result)) {
+      result = String.valueOf(digit);
     }
-    if (digit % 15 == 0) {
-      return "FizzBuzz";
-    }
-    if (digit % 21 == 0) {
-      return "FizzWhizz";
-    }
-    if (digit % 35 == 0) {
-      return "BuzzWhizz";
-    }
+    return result;
+  }
+
+  private String handleRules(int digit) {
+    String result = "";
     if (digit % 3 == 0) {
-      return "Fizz";
+      result += "Fizz";
     }
     if (digit % 5 == 0) {
-      return "Buzz";
+      result += "Buzz";
     }
     if (digit % 7 == 0) {
-      return "Whizz";
+      result += "Whizz";
     }
-    return String.valueOf(digit);
+    return result;
   }
 }
