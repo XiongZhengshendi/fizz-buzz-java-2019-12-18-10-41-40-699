@@ -34,4 +34,13 @@ public class FizzBuzzTest {
 
     assertEquals(actual, "Buzz");
   }
+
+  @Test
+  public void should_return_Whizz_given_input_divided_by_7() {
+    int digit = 7;
+
+    String actual = fizzBuzz.handleDigit(digit);
+
+    assertEquals(actual, "Whizz");
+  }
 }

@@ -9,6 +9,9 @@ public class FizzBuzz {
     if (digit % 5 == 0) {
       return "Buzz";
     }
+    if (digit % 7 == 0) {
+      return "Whizz";
+    }
     return String.valueOf(digit);
   }
 }
