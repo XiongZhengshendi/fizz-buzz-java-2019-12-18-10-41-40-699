@@ -14,6 +14,10 @@ public class FizzBuzz {
   }
 
   private String handleRules(int digit) {
+    String digitString = String.valueOf(digit);
+    if (digitString.contains("3")) {
+      return "Fizz";
+    }
     String result = "";
     if (digit % 3 == 0) {
       result += "Fizz";
