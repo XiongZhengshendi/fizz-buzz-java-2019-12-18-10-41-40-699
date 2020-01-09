@@ -46,7 +46,7 @@ public class FizzBuzzTest {
 
   @Test
   public void should_return_FizzBuzz_given_input_divided_by_3_and_5() {
-    int digit = 15;
+    int digit = 60;
 
     String actual = fizzBuzz.handleDigit(digit);
 
@@ -64,7 +64,7 @@ public class FizzBuzzTest {
 
   @Test
   public void should_return_BuzzWhizz_given_input_divided_by_5_and_7() {
-    int digit = 70;
+    int digit = 35;
 
     String actual = fizzBuzz.handleDigit(digit);
 
@@ -73,7 +73,7 @@ public class FizzBuzzTest {
 
   @Test
   public void should_return_FizzBuzzWhizz_given_input_divided_by_3_and_5_and_7() {
-    int digit = 105;
+    int digit = 210;
 
     String actual = fizzBuzz.handleDigit(digit);
 
@@ -105,6 +105,15 @@ public class FizzBuzzTest {
     String actual = fizzBuzz.handleDigit(digit);
 
     assertEquals(actual, "BuzzWhizz");
+  }
+
+  @Test
+  public void should_return_Fizz_given_input_contains_7_ignore_contains_5() {
+    int digit = 75;
+
+    String actual = fizzBuzz.handleDigit(digit);
+
+    assertEquals(actual, "Fizz");
   }
 
 }
