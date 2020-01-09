@@ -15,11 +15,12 @@ public class FizzBuzz {
 
   private String handleRules(int digit) {
     String digitString = String.valueOf(digit);
-    if (digitString.contains("3")) {
+    boolean isContains5 = digitString.contains("5");
+    if (digitString.contains("3") && !isContains5) {
       return "Fizz";
     }
     String result = "";
-    if (digit % 3 == 0) {
+    if (digit % 3 == 0 && !isContains5) {
       result += "Fizz";
     }
     if (digit % 5 == 0) {

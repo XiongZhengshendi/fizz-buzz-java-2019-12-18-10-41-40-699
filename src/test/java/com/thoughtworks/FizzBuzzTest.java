@@ -89,4 +89,22 @@ public class FizzBuzzTest {
     assertEquals(actual, "Fizz");
   }
 
+  @Test
+  public void should_return_Fizz_given_input_contains_3_ignore_divided_rules() {
+    int digit = 30;
+
+    String actual = fizzBuzz.handleDigit(digit);
+
+    assertEquals(actual, "Fizz");
+  }
+
+  @Test
+  public void should_return_Buzz_given_input_contains_5_ignore_contains_3() {
+    int digit = 35;
+
+    String actual = fizzBuzz.handleDigit(digit);
+
+    assertEquals(actual, "BuzzWhizz");
+  }
+
 }
